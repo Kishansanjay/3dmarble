@@ -14,12 +14,13 @@
   --black-color2: #0a0a0a;
   --gray-color: #d8dbdc;
   --white-color: #ffffff;
-  --light-color: #b7bec8;
+  --light-color: #dee2e6;
   --yellow-color: #ffb539;
   --success-color: #28a745;
   --error-color: #dc3545;
   --th-border-color: #e0e0e0;
-  --title-font: "Cabinet Grotesk", sans-serif;
+  /* --title-font: "Cabinet Grotesk", sans-serif; */
+  --title-font: "Gallery Modern";
   --title-font2: "Gallery Modern";
   --body-font: "League Spartan", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
@@ -38,7 +39,7 @@ body {
   font-family: var(--body-font);
   font-size: 16px;
   font-weight: 400;
-  color: var(--body-color);
+  color: var(--title-color);
   line-height: 26px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -64,6 +65,7 @@ body.light h6,
 body.light .sub-title,
 body.light .th-btn,
 body.light .item {
+  /* --white-color: #ffffff; */
   --white-color: #0e0e0e;
 }
 body.light .th-btn:hover {
@@ -8608,7 +8610,7 @@ ol.widget_recent_comments,
 .breadcumb-menu a {
   position: relative;
   z-index: 2;
-  margin-left: 25px;
+  /* margin-left: 25px; */
 }
 /
 .breadcumb-menu a:before {
@@ -10866,7 +10868,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   font-weight: 400;
   font-size: 140px;
   line-height: 140px;
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 @media (max-width: 1199px) {
   .hero-style3 .hero-title {
@@ -23544,8 +23546,10 @@ section .testi-area {
 }
 @media (max-width: 1399px) {
   .project-grid .box-title {
-    font-size: 30px;
-  }
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 767px) {
   .project-grid .box-title {
@@ -25111,4 +25115,8 @@ section .testi-area {
       }
 .project-content .box-title a {
     color: var(--theme-color);
+}
+.project-grid .project-content {
+  padding: 10px;
+  border: 1px solid #dee2e6;
 }
